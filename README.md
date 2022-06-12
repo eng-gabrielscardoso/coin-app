@@ -72,8 +72,8 @@ We thank the following people who contributed to this project:
 
 Want to be part of this project? Click [HERE](CONTRIBUTING.md) and read how to contribute.
 
-## 📝 License
+## 📝 Licence
 
-This project is under license. See the [LICENSE](LICENCE.md) file for more details.
+This project is under licence. See the [LICENCE](LICENCE.md) file for more details.
 
 [⬆ Back to top](#app-coin)<br>
