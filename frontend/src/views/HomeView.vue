@@ -1,15 +1,18 @@
 <template>
   <div class="HomeView">
+    <BaseNavbar />
     <HelloVue />
   </div>
 </template>
 
 <script>
-import HelloVue from '@/components/HelloVue.vue'
+import BaseNavbar from '@/components/template/BaseNavbar'
+import HelloVue from '@/components/HelloVue'
 
 export default {  
   name: "HomeView",
   components: {
+    BaseNavbar,
     HelloVue,
   },
   mounted() {
