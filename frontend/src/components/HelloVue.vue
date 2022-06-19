@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex justify-center items-center bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+  <div class="h-screen flex justify-center items-center bg-gradient-to-t from-gray-700 via-gray-900 to-black">
     <h1 class="text-white text-5xl">
       App Coin
     </h1>
