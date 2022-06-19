@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute lg:flex lg:items-center w-full py-4 px-6 text-white border-b-2 border-b-gray-400">
+  <header class="lg:flex lg:items-center w-full py-4 px-6 text-white border-b-2 border-b-gray-400 bg-black">
     <div class="flex justify-between items-center">
       <router-link 
         to="/"
