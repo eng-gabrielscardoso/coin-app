@@ -20,7 +20,7 @@
 export default {  
   name: "NotFoundView",
   mounted() {
-    document.title = "About | CoinApp - Crypto Financial Market Online"
+    document.title = "404 Not Found | CoinApp - Crypto Financial Market Online"
   }
 }
 </script>
