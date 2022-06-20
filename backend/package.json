@@ -4,7 +4,8 @@
   "private": "true",
   "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
   },
   "author": "Gabriel Santos Cardoso",
   "license": "MIT",
