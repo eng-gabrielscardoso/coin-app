@@ -3,7 +3,9 @@
     <img :src="coinDetails.image.small" alt="Sunset in the mountains">
     <div class="px-6 py-4">
       <div class="max-w-sm font-bold text-md">
-        {{ coinDetails.name }}
+        <router-link :to="'/coin/' + coinDetails.id">
+          {{ coinDetails.name }}
+        </router-link>
       </div>
       <div class="max-w-sm max-h-10 font-light text-sm overflow-hidden text-ellipsis">
         <p v-html="coinDetails.description.en"></p>
