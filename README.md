@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-  <img src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white">
   <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7">
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white">
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
@@ -30,7 +29,7 @@ The following adjustments and improvements are necessary and are still open:
 
 
 
-## 🚀 Instalation
+## 🚀 Installation
 
 
 
@@ -72,8 +71,8 @@ We thank the following people who contributed to this project:
 
 Want to be part of this project? Click [HERE](CONTRIBUTING.md) and read how to contribute.
 
-## 📝 License
+## 📝 Licence
 
-This project is under license. See the [LICENSE](LICENCE.md) file for more details.
+This project is under licence. See the [LICENCE](LICENCE.md) file for more details.
 
 [⬆ Back to top](#app-coin)<br>

@@ -1,19 +1,19 @@
 <template>
   <div class="HomeView">
-    <HelloVue />
+    <AppHeadline />
   </div>
 </template>
 
 <script>
-import HelloVue from '@/components/HelloVue.vue'
+import AppHeadline from '@/components/AppHeadline'
 
 export default {  
   name: "HomeView",
   components: {
-    HelloVue,
+    AppHeadline,
   },
   mounted() {
-    document.title = "App Coin - Crypto Financial Market Online"
+    document.title = "CoinApp - Crypto Financial Market Online"
   }
 }
 </script>
