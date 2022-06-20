@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
+  // Base routes
   {
     path: '/',
     name: 'home',
@@ -21,6 +22,13 @@ const routes = [
     name: 'about',
     component: () => import('@/views/AboutView.vue')
   },
+  // Coins
+  {
+    path: '/coin/:coin',
+    name: 'coin',
+    component: () => import('@/views/CoinView.vue')
+  },
+  // Not found error
   {
     path: '/NotFound',
     name: 'NotFound',
@@ -30,7 +38,6 @@ const routes = [
     path: "/:catchAll(.*)",
     redirect: { 
       name: 'NotFound',
-      params: { resource: 'Page' } 
     }
   },
 ]
