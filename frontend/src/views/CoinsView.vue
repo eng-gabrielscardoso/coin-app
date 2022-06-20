@@ -18,7 +18,7 @@
 import AppCoins from '@/components/AppCoins.vue'
 
 export default {  
-  name: "HomeView",
+  name: "CoinsView",
   components: {
     AppCoins,
   },

@@ -8,7 +8,7 @@
 
 <script>
 export default {  
-  name: "HomeView",
+  name: "ContactView",
   mounted() {
     document.title = "Contact | CoinApp - Crypto Financial Market Online"
   }
