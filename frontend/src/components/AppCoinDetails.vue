@@ -11,10 +11,10 @@
           {{ this.coinDetails.name }}
         </h1>
       </div>
-      <div class="flex items-center justify-center w-full md:w-7/12 h-64 bg-gray-500 rounded">
-        <AlertIcon />
-        Charts in development
-      </div>
+      <AppChart 
+        :coinData="coinDetails"
+        class="flex items-center justify-center w-full md:w-7/12 h-64 border rounded"
+      />
     </div>
     <div class="my-4 text-md">
       <p 
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import AlertIcon from "@/assets/icons/AlertIcon.vue"
+import AppChart from "./AppChart.vue"
 
 export default {
   name: "AppCoinDetails",
@@ -37,11 +37,7 @@ export default {
     }
   },
   components: {
-    AlertIcon,
+    AppChart,
   },
 }
 </script>
-
-<style>
-
-</style>
