@@ -30,7 +30,7 @@ The following adjustments and improvements are necessary and are still open:
 
 
 
-## 🚀 Instalation
+## 🚀 Installation
 
 
 
