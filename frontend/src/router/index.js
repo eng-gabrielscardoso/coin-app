@@ -21,6 +21,18 @@ const routes = [
     name: 'about',
     component: () => import('@/views/AboutView.vue')
   },
+  {
+    path: '/NotFound',
+    name: 'NotFound',
+    component: () => import('@/views/NotFoundView.vue')
+  },
+  {
+    path: "/:catchAll(.*)",
+    redirect: { 
+      name: 'NotFound',
+      params: { resource: 'Page' } 
+    }
+  },
 ]
 
 const router = createRouter({
