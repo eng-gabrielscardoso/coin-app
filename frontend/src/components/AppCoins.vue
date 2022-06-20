@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import axios from "axios"
+import api from "@/plugins/api"
 import AppCoinCard from './AppCoinCard.vue'
 import LoadingAnimation from "@/assets/animations/Loading.vue"
 
@@ -50,8 +50,8 @@ export default {
 
     fetchMainCoins() {
       this.mainCoins.forEach(coin => {
-        axios
-          .get(`http://localhost:8082/details/${coin}`)
+        api
+          .get(`/details/${coin}`)
           .then(response => this.coinsDetails.push(response.data))
           .finally(() => this.showLoading = false)
       })
