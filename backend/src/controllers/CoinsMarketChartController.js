@@ -13,15 +13,12 @@ class CoinsMarketChartController {
         .get(`/coins/${coin}/market_chart?vs_currency=${currency}&days=${period}`)
         .then(data => {
           res.send(data.data)
-            .sendStatus(200)
         })
         .catch(error => {
           res.send(error)
-            .sendStatus(500)
         })
     } catch (error) {
       res.send(error)
-        .sendStatus(500)
     }
   }
 }

@@ -9,15 +9,12 @@ class CoinsDetailsController {
         .get(`/coins/${coin}`)
         .then(data => {
           res.send(data.data)
-            .sendStatus(200)
         })
         .catch(error => {
           res.send(error)
-            .sendStatus(500)
         })
     } catch (error) {
       res.send(error)
-        .sendStatus(500)
     }
   }
 }

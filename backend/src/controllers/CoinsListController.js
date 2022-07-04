@@ -6,11 +6,9 @@ class CoinsListController {
       .get('/coins/list')
       .then(data => {
         res.send(data.data)
-          .sendStatus(200)
       })
       .catch(error => {
         res.send(error)
-          .sendStatus(500)
       })
   }
 }
