@@ -1,12 +1,6 @@
 <template>
   <div class="CoinView">
-    <BaseIcon 
-      v-if="showLoading"
-      name="fa-circle-notch"
-      animation="spin"
-      scale="2"
-      class="relative text-blue-600"
-    />
+    <BaseLoading v-if="showLoading" />
     <AppCoinDetails 
       v-else
       :coinDetails="coinDetails"
@@ -16,6 +10,7 @@
 
 <script>
 import AppCoinDetails from "@/components/AppCoinDetails.vue"
+import BaseLoading from "@/components/base/BaseLoading"
 import api from "@/plugins/api"
 import { useLayoutState } from "@/store/layout"
 
@@ -27,6 +22,7 @@ export default {
   },
   components: {
     AppCoinDetails,
+    BaseLoading
   },
   data() {
     return {
