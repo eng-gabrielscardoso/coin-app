@@ -15,15 +15,20 @@
 </template>
 
 <script>
-import AppCoins from '@/components/AppCoins.vue'
+import AppCoins from "@/components/AppCoins.vue";
+import { useLayoutState } from "@/store/layout";
 
 export default {  
   name: "CoinsView",
+  setup() {
+    const { setTopTitle } = useLayoutState()
+    return { setTopTitle }
+  },
   components: {
     AppCoins,
   },
   mounted() {
-    document.title = "Coins | CoinApp - Crypto Financial Market Online"
+    this.setTopTitle("Coins | CoinApp")
   }
 }
 </script>

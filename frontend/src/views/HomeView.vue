@@ -6,14 +6,19 @@
 
 <script>
 import AppHeadline from '@/components/AppHeadline'
+import { useLayoutState } from '@/store/layout'
 
 export default {  
   name: "HomeView",
+  setup() {
+    const { setTopTitle } = useLayoutState()
+    return { setTopTitle }
+  },
   components: {
     AppHeadline,
   },
   mounted() {
-    document.title = "CoinApp - Crypto Financial Market Online"
+    this.setTopTitle("CoinApp - Crypto Financial Market Online")
   }
 }
 </script>

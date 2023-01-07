@@ -43,10 +43,16 @@
 </template>
 
 <script>
+import { useLayoutState } from "@/store/layout";
+
 export default {  
   name: "AboutView",
+  setup() {
+    const { setTopTitle } = useLayoutState()
+    return { setTopTitle }
+  },
   mounted() {
-    document.title = "About | CoinApp - Crypto Financial Market Online"
+    this.setTopTitle("About | CoinApp")
   }
 }
 </script>

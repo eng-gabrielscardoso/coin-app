@@ -17,10 +17,16 @@
 </template>
 
 <script>
+import { useLayoutState } from "@/store/layout"
+
 export default {  
   name: "NotFoundView",
+  setup() {
+    const { setTopTitle } = useLayoutState()
+    return { setTopTitle }
+  },
   mounted() {
-    document.title = "404 Not Found | CoinApp - Crypto Financial Market Online"
+    this.setTopTitle("404 Not Found | CoinApp")
   }
 }
 </script>
