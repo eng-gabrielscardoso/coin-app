@@ -15,4 +15,6 @@ addIcons(
   FaLinkedin
 )
 
-export const baseIcons = OhVueIcon
+const BaseIcons = OhVueIcon
+
+export default BaseIcons

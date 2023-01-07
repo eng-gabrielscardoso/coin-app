@@ -10,7 +10,6 @@
 
 <script>
 import AppCoinDetails from "@/components/AppCoinDetails.vue"
-import BaseLoading from "@/components/base/BaseLoading"
 import api from "@/plugins/api"
 import { useLayoutState } from "@/store/layout"
 
@@ -21,8 +20,7 @@ export default {
     return { setTopTitle }
   },
   components: {
-    AppCoinDetails,
-    BaseLoading
+    AppCoinDetails
   },
   data() {
     return {
