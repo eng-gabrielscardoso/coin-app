@@ -14,14 +14,7 @@
   </div>
 </template>
 <script>
-import BaseFooter from "@/components/base/BaseFooter"
-import BaseNavbar from "@/components/base/BaseNavbar"
-
-export default {  
+export default {
   name: "App",
-  components: {
-    BaseNavbar,
-    BaseFooter,
-  }
 }
 </script>
