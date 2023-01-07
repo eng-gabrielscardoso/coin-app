@@ -5,34 +5,34 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/HomeView.vue')
-  },
-  {
-    path: '/coins',
-    name: 'coins',
-    component: () => import('@/views/CoinsView.vue')
+    component: () => import(/* webpackChunkName: "home" */'@/views/HomeView.vue')
   },
   {
     path: '/contact',
     name: 'contact',
-    component: () => import('@/views/ContactView.vue')
+    component: () => import(/* webpackChunkName: "contact" */'@/views/ContactView.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */'@/views/AboutView.vue')
   },
   // Coins
   {
+    path: '/coins',
+    name: 'coins',
+    component: () => import(/* webpackChunkName: "favouriteCoins" */'@/views/CoinsView.vue')
+  },
+  {
     path: '/coin/:coin',
     name: 'coin',
-    component: () => import('@/views/CoinView.vue')
+    component: () => import(/* webpackChunkName: "coinDetails" */'@/views/CoinView.vue')
   },
   // Not found error
   {
     path: '/NotFound',
     name: 'NotFound',
-    component: () => import('@/views/NotFoundView.vue')
+    component: () => import(/* webpackChunkName: "notFound" */'@/views/NotFoundView.vue')
   },
   {
     path: "/:catchAll(.*)",
