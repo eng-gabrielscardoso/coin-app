@@ -1,8 +1,11 @@
 <template>
   <div class="CoinView">
-    <LoadingAnimation 
-      v-if="showLoading" 
-      class="relative"
+    <BaseIcon 
+      v-if="showLoading"
+      name="fa-circle-notch"
+      animation="spin"
+      scale="2"
+      class="relative text-blue-600"
     />
     <AppCoinDetails 
       v-else
@@ -12,15 +15,13 @@
 </template>
 
 <script>
-import api from "@/plugins/api"
 import AppCoinDetails from "@/components/AppCoinDetails.vue"
-import LoadingAnimation from "@/assets/animations/Loading.vue"
+import api from "@/plugins/api"
 
 export default {  
   name: "CoinView",
   components: {
     AppCoinDetails,
-    LoadingAnimation,
   },
   data() {
     return {
@@ -30,7 +31,7 @@ export default {
     }
   },
   methods: {
-     init() {
+    init() {
       this.fetchMainCoins()
     },
 

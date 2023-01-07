@@ -1,6 +1,7 @@
 import { addIcons, OhVueIcon } from 'oh-vue-icons'
 import {
   FaBars,
+  FaCircleNotch,
   FaDollarSign,
   FaGithub,
   FaLinkedin
@@ -8,6 +9,7 @@ import {
 
 addIcons(
   FaBars,
+  FaCircleNotch,
   FaDollarSign,
   FaGithub,
   FaLinkedin
