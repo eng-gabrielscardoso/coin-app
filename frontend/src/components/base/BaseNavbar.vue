@@ -3,25 +3,25 @@
     <div class="flex justify-between items-center">
       <router-link 
         to="/"
-        class="flex hover:text-gray-600 transition-colors"
+        class="flex items-center hover:text-gray-600 transition-colors"
         title="CoinApp"
       >
-        <CurrencyIcon />
+        <BaseIcon name="fa-dollar-sign" scale="1.5" />
         CoinApp
       </router-link>
       <button 
-        class="text-white hover:text-gray-600 transition-colors cursor-pointer block lg:hidden" 
+        class="text-white transition-colors cursor-pointer block lg:hidden" 
         type="button" 
         @click="toggleNavbar()"
       >
-        <MenuIcon />
+        <BaseIcon name="fa-bars" scale="1.5" />
       </button>
     </div>
     <nav
       :class="{'hidden': !showMenu}"
       class="lg:flex lg:flex-grow lg:items-center"
     >
-      <ul class="flex-col lg:flex lg:flex-row justify-between list-none ml-auto lg:w-3/12">
+      <ul class="flex-col lg:flex lg:flex-row lg:justify-between text-center justify-center items-center list-none ml-auto lg:w-3/12">
         <li
           class="hover:text-gray-600 transition-colors py-2 lg:py-0"
           title="Coins"
@@ -55,7 +55,7 @@
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <GithubIcon />
+            <BaseIcon name="fa-github" scale="1.5" />
           </a>
         </li>
         <li 
@@ -67,7 +67,7 @@
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <LinkedinIcon  />
+            <BaseIcon name="fa-linkedin" scale="1.5" />
           </a>
         </li>
       </ul>
@@ -76,19 +76,9 @@
 </template>
 
 <script>
-import CurrencyIcon from '@/assets/icons/CurrencyIcon.vue'
-import GithubIcon from '@/assets/icons/GithubIcon.vue'
-import LinkedinIcon from '@/assets/icons/LinkedinIcon.vue'
-import MenuIcon from '@/assets/icons/MenuIcon.vue'
 
 export default {
   name: "BaseNavbar",
-  components: {
-    CurrencyIcon,
-    GithubIcon,
-    LinkedinIcon,
-    MenuIcon,
-  },
   data() {
     return {
       showMenu: false,

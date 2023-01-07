@@ -21,7 +21,7 @@
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <GithubIcon />
+              <BaseIcon name="fa-github" scale="1.5" />
             </a>
           </li>
           <li 
@@ -33,7 +33,7 @@
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <LinkedinIcon  />
+              <BaseIcon name="fa-linkedin" scale="1.5" />
             </a>
           </li>
         </ul>
@@ -43,15 +43,8 @@
 </template>
 
 <script>
-import GithubIcon from '@/assets/icons/GithubIcon.vue'
-import LinkedinIcon from '@/assets/icons/LinkedinIcon.vue'
-
 export default {  
   name: "AboutView",
-  components: {
-    GithubIcon,
-    LinkedinIcon,
-  },
   mounted() {
     document.title = "About | CoinApp - Crypto Financial Market Online"
   }
