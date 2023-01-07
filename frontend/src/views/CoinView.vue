@@ -17,9 +17,14 @@
 <script>
 import AppCoinDetails from "@/components/AppCoinDetails.vue"
 import api from "@/plugins/api"
+import { useLayoutState } from "@/store/layout"
 
 export default {  
   name: "CoinView",
+  setup() {
+    const { setTopTitle } = useLayoutState()
+    return { setTopTitle }
+  },
   components: {
     AppCoinDetails,
   },
@@ -42,9 +47,11 @@ export default {
         .finally(() => this.showLoading = false)
     },
   },  
-  mounted() {
+  created() {
     this.init()
-    document.title = `${this.coin[0].toUpperCase() + this.coin.slice(1,)} | CoinApp - Crypto Financial Market Online`
+  },
+  mounted() {
+    this.setTopTitle(`${this.coin[0].toUpperCase() + this.coin.slice(1,)} | CoinApp`)
   }
 }
 </script>

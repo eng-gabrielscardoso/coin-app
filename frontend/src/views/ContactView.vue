@@ -110,22 +110,24 @@
 </template>
 
 <script>
+import { useLayoutState } from "@/store/layout"
 import useVuelidate from "@vuelidate/core"
-import { required, email, numeric, minLength } from "@vuelidate/validators"
+import { email, minLength, numeric, required } from "@vuelidate/validators"
 
 export default {  
   name: "ContactView",
 
   setup() {
-    return { v$: useVuelidate() }
+    const { setTopTitle } = useLayoutState()
+    return { v$: useVuelidate(), setTopTitle }
   },
 
   data() {
     return {
-      clientName: '',
-      clientEmail: '',
-      clientPhone: '',
-      clientMessage: '',
+      clientName: "",
+      clientEmail: "",
+      clientPhone: "",
+      clientMessage: "",
     }
   },
 
@@ -145,7 +147,7 @@ export default {
   },
 
   mounted() {
-    document.title = "Contact | CoinApp - Crypto Financial Market Online"
+    this.setTopTitle("Contact | CoinApp")
   }
 }
 </script>
