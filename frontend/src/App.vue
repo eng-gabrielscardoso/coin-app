@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import BaseNavbar from '@/components/template/BaseNavbar'
-import BaseFooter from '@/components/template/BaseFooter'
+import BaseFooter from '@/components/base/BaseFooter';
+import BaseNavbar from '@/components/base/BaseNavbar';
 
 export default {  
   name: "HomeView",

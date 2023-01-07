@@ -1,8 +1,11 @@
 <template>
   <div class="flex flex-wrap justify-center align-center gap-2 w-full md:w-4/6">
-    <LoadingAnimation 
-      v-if="showLoading" 
-      class="relative"
+    <BaseIcon 
+      v-if="showLoading"
+      name="fa-circle-notch"
+      animation="spin"
+      scale="2"
+      class="relative text-blue-600"
     />
     <AppCoinCard
       v-for="coin in coinsDetails"
@@ -15,13 +18,11 @@
 <script>
 import api from "@/plugins/api"
 import AppCoinCard from './AppCoinCard.vue'
-import LoadingAnimation from "@/assets/animations/Loading.vue"
 
 export default {
   name: "AppCoins",
   components: {
     AppCoinCard,
-    LoadingAnimation,
   },
   data() {
     return {
